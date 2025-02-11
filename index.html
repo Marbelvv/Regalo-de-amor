@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mar y Ale</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="valentineQuestion"><b>¿Quieres seguir en mi vida?</b></div>
+      <button class="answerButton" onclick="location.href='thankyou.html'">
+        Obvi siiii
+      </button>
+      <button class="answerButton" id="noButton">
+        Increíble que preguntes!!
+      </button>
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExejhmdGpsd2gzbTcwbXBrNDYwcDU4YnFldW9yc3RqYmduYWtydXMydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/uWzRXTQRoQzxDO9W0p/giphy.gif" />
+    </div>
+
+    <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px";
+        });
+    </script>
+  </body>
+</html>

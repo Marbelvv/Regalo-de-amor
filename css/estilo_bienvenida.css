@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-family: "Courier";
+    background-color: #fff5e4;
+    color: #ff9494;
+    height: 100vh; /* Ocupar toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaciado entre elementos */
+  }
+  
+  #thankyou {
+    font-size: 50px;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Courier";
+    background-color: #ffe3e1;
+    color: #e67373;
+    border-radius: 12px;
+    border: 2px solid #ffe3e1;
+    box-shadow: 1px 1px 2px #ff9494;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #ff9494;
+    color: #ffe3e1;
+    border: 2px solid #ff9494;
+    box-shadow: 1px 1px 2px #ffe3e1;
+  }
+  
+
+/* Estilos para el botón de música */
+#playMusicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #ff9494;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  #playMusicBtn:hover {
+    background: #ff6b6b;
+  }
